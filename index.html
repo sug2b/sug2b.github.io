@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI通信・ゲーム通信向けの個人用動画制作・YouTube投稿ツールの案内。">
+  <title>AI通信・ゲーム通信 投稿ツール</title>
+  <style>
+    :root { color-scheme: light; --ink:#182230; --muted:#586678; --line:#dce3eb; --accent:#1456a0; --paper:#fff; --wash:#f4f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--wash); color:var(--ink); font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header { background:#102a43; color:#fff; }
+    .wrap { width:min(920px, calc(100% - 40px)); margin-inline:auto; }
+    header .wrap { padding:52px 0 42px; }
+    h1 { margin:0 0 12px; font-size:clamp(2rem,5vw,3.15rem); line-height:1.2; letter-spacing:.01em; }
+    header p { max-width:690px; margin:0; color:#e1eaf3; font-size:1.08rem; }
+    main { padding:34px 0 56px; }
+    section, nav { background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:26px 30px; margin-bottom:18px; }
+    h2 { margin:0 0 12px; font-size:1.3rem; }
+    p { margin:0 0 12px; }
+    p:last-child { margin-bottom:0; }
+    ul { margin:10px 0 0; padding-left:1.3rem; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    nav { display:flex; flex-wrap:wrap; gap:10px 24px; }
+    .note { color:var(--muted); font-size:.94rem; }
+    footer { color:var(--muted); padding:0 0 34px; font-size:.9rem; }
+    @media (max-width:600px) { .wrap { width:min(100% - 28px, 920px); } header .wrap { padding:38px 0 32px; } section,nav { padding:21px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>AI通信・ゲーム通信 投稿ツール</h1>
+      <p>個人開発のWindows向け動画制作・投稿ツールです。AI通信とゲーム通信の動画を制作し、それぞれのYouTubeチャンネルへ動画をアップロードしたり、公開日時を予約したりするために使用します。</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section>
+      <h2>このツールについて</h2>
+      <p>このツールは一般向けの登録サービスではありません。運営者が自分のチャンネルを管理するためにローカルPCで実行します。YouTubeへの投稿前には投稿先チャンネルを照合し、予約投稿の状態をYouTube APIで確認します。</p>
+      <p class="note">Google OAuthは、運営者のGoogleアカウントを通じてYouTube Data APIを利用するために使用します。動画のアップロードとチャンネル情報の確認以外の目的では使用しません。</p>
+    </section>
+    <section>
+      <h2>チャンネルと権限</h2>
+      <ul>
+        <li>AI通信：チャンネルID <code>UCeEQuZ4xRiKbR67J-_so5Ig</code></li>
+        <li>ゲーム通信：チャンネルID <code>UCJfYnjm0G8wk1c5y1uUpm1w</code></li>
+      </ul>
+      <p>投稿ツールは、チャンネルの確認、動画のアップロード、既存動画との重複確認、アップロード後の公開状態・予約時刻の確認を行います。差し替え処理を運営者が明示的に実行した場合に限り、対象となる既存動画を削除することがあります。</p>
+    </section>
+    <nav aria-label="ポリシー">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+    <section>
+      <h2>お問い合わせ</h2>
+      <p><a href="mailto:tm_sug16_2b@yahoo.co.jp">tm_sug16_2b@yahoo.co.jp</a></p>
+    </section>
+  </main>
+  <footer class="wrap">最終更新日：2026年11月18日</footer>
+</body>
+</html>
